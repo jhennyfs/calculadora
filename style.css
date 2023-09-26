@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px; /* A largura máxima da calculadora */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+  }
+  
+  /* Estilos para o visor */
+  #visor {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: right;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  /* Estilos para o teclado */
+  .teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 300px;
+  }
+  
+  /* Estilos para os botões de números e operações */
+  .numero,
+  .operacao {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    background-color: #ff69b4; /* Rosa */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .numero:hover,
+  .operacao:hover {
+    background-color: #ff428e; /* Rosa mais escuro ao passar o mouse */
+  }
+  
+  /* Estilos para o botão de limpar */
+  .operacao.limpar {
+    background-color: #ffcccc; /* Rosa claro para o botão de limpar */
+  }
+  
+  .operacao.limpar:hover {
+    background-color: #ff9999; /* Rosa mais claro ao passar o mouse */
+  }
+  
+  
